@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "backup-claim-audit"
+version = "0.1.0"
+description = "Offline static audit of documented backup behavior"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Hao Li"}]
+dependencies = []
+
+[project.scripts]
+backup-claim-audit = "backup_claim_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
